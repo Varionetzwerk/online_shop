@@ -1,0 +1,412 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+header {
+    background-color: #282c34; /* Dunkelgrau */
+    color: #fff;
+    padding: 20px 0;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.header-top {
+    background-color: #282c34; /* Noch dunkleres Grau */
+    padding: 5px 0;
+    text-align: center;
+}
+
+.header-top .contact-info {
+    font-size: 14px;
+}
+
+.header-top .contact-info p {
+    margin: 0;
+    color: #fff;
+}
+
+.header-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+    height: 60px;
+}
+
+.header-main .logo img {
+    height: 50px;
+}
+
+.search-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    margin: 0 20px;
+}
+
+.search-container input[type="text"] {
+    width: 100%;
+    max-width: 600px;
+    padding: 10px;
+    border-radius: 25px;
+    border: 1px solid #007bff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.nav-icons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.nav-icons .icon {
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav-icons .icon:hover {
+    color: #ff5722; /* Orange */
+}
+
+hr.divider {
+    border: none;
+    border-top: 1px solid #007bff;
+    margin: 10px 0;
+}
+
+.main-nav {
+    background-color: #282c34; /* Hellgrau */
+    padding: 10px 0;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.main-nav ul li {
+    margin: 0 15px;
+}
+
+.main-nav ul li a {
+    text-decoration: none;
+    color: #ffffff; /* Dunkelgrau */
+    font-size: 16px;
+    padding: 5px 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.main-nav ul li a:hover {
+    background-color: #007bff; /* Blau */
+    color: #fff;
+    border-radius: 25px;
+}
+
+main {
+    margin-top: 140px; /* Platz für den fixierten Header */
+    padding: 130px;
+    max-width: 10000px;
+    margin: 80px auto 60px auto; /* Hinzugefügt, um mehr Platz zu schaffen */
+}
+
+.hero {
+    background: url('../images/NEUMORPHIC_CIRCLES_BACKGROUND.jpg') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 100px 30px;
+    background-size: cover; /* Stellt sicher, dass das Bild den Bildschirmrand abdeckt */
+    background-position: center;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero p {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.shop-now-button {
+    background-color: #007bff; /* Blau */
+    color: #fff;
+    padding: 8px 16px; /* Kleinere Polsterung */
+    border-radius: 20px; /* Etwas kleinerer Radius */
+    text-decoration: none;
+    font-size: 1em; /* Kleinere Schriftgröße */
+    transition: background-color 0.3s;
+}
+
+.shop-now-button:hover {
+    background-color: #0056b3; /* Dunkleres Blau */
+}
+
+.product-categories {
+    padding: 20px 0;
+}
+
+.product-categories h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.category-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.category-item {
+    flex: 1 1 calc(25% - 40px);
+    box-sizing: border-box;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.category-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.category-item img {
+    width: 100%;
+    height: auto;
+}
+
+.featured-products {
+    padding: 20px 0;
+}
+
+.featured-products h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: flex-start; /* Ausrichtung nach links */
+}
+
+.product-card {
+    flex: 1 1 calc(10% - 20px); /* 10 Produkte in einer Reihe mit Abstand */
+    box-sizing: border-box;
+    background-color: #fff;
+    border: 1px solid #ddd; /* Größere Border */
+    border-radius: 8px; /* Kleinere Rundung */
+    padding: 20px; /* Größere Polsterung */
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    max-width: 180px; /* Breitere Karten */
+    margin: 10px;
+    height: 320px; /* Höhe der Karte angepasst */
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.product-card img {
+    width: 100%;
+    height: 100px; /* Feste Höhe für Bilder */
+    object-fit: cover; /* Behält das Seitenverhältnis der Bilder bei */
+    border-radius: 10%; /* Macht das Bild rund */
+    border: 5px solid #ddd; /* Gleiche Border-Größe für alle Bilder */
+}
+
+.product-card h3 {
+    margin: 10px 0;
+    font-size: 1em; /* Etwas größere Schriftgröße */
+}
+
+.product-card .price {
+    font-size: 1.1em; /* Etwas größere Schriftgröße */
+    color: #007bff; /* Blau */
+}
+
+.product-card .add-to-cart,
+.product-card .view-details {
+    display: block;
+    width: 90%; /* Breite bleibt 90%, angepasst für die Box */
+    border-radius: 5px; /* Kleinere Rundung */
+    background-color: #007bff; /* Blau für 'add-to-cart', Orange für 'view-details' */
+    color: #fff;
+    border: none; /* Entfernt den Rand für ein saubereres Aussehen */
+    padding: 8px; /* Kleinere Polsterung */
+    font-size: 0.9em; /* Kleinere Schriftgröße */
+    text-align: center; /* Zentriert den Text */
+    transition: background-color 0.3s;
+    cursor: pointer;
+    margin: 10px 0; /* Abstand zwischen den Buttons */
+}
+
+.product-card .view-details {
+    background-color: orangered; /* Farbe für 'view-details' Button */
+    border: none;
+}
+
+.product-card .add-to-cart:hover {
+    background-color: #0056b3; /* Dunkleres Blau beim Hover */
+}
+
+.product-card .view-details:hover {
+    background-color: #cc3300; /* Dunkleres Orange beim Hover */
+}
+
+
+
+
+
+.product-card .add-to-cart:hover {
+    background-color: #0056b3; /* Dunkleres Blau */
+}
+
+footer {
+    background-color: #282c34; /* Dunkelgrau */
+    color: #fff;
+    padding: 30px;
+    border-radius: 20px 20px 0 0; /* Nur oben abgerundet */
+    margin-top: 40px;
+    text-align: center; /* Zentriert den gesamten Footer-Inhalt */
+    position: relative;
+}
+
+.footer-top {
+    margin-bottom: 20px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-section {
+    margin: 0 10px;
+    flex: 1; /* Damit die Abschnitte gleichmäßig verteilt werden */
+}
+
+.footer-section h4 {
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #ff5722; /* Orange */
+}
+
+.footer-info {
+    margin: 20px 0;
+}
+
+.footer-info ul {
+    list-style: none;
+    padding: 0;
+    text-align: center; /* Zentriert den Inhalt */
+}
+
+.footer-info ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.footer-info ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.footer-info ul li a:hover {
+    color: #ff5722; /* Orange */
+}
+
+.footer-payments {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.footer-payments img {
+    height: 30px;
+}
+
+.footer-copyright {
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+    font-size: 14px;
+}
+
+
+.newsletter {
+    margin-top: -40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Zentriert die Elemente horizontal */
+    justify-content: center; /* Optional: Zentriert die Elemente vertikal, falls erforderlich */
+    text-align: center; /* Optional: Zentriert den Text innerhalb des Containers */
+}
+
+.newsletter input[type="email"] {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    width: 90%;
+    max-width: 400px;
+}
+
+.newsletter button {
+    padding: 10px 50px;
+    margin-top: 30px;
+
+    border-radius: 5px;
+    border: none;
+    background-color: #007bff; /* Blau */
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.newsletter button:hover {
+    background-color: #0056b3; /* Dunkleres Blau */
+}
+
